@@ -15,31 +15,26 @@
             EXPENSE TRACKER
         </h1>
     </div>
-    <div id="form">
-        <!-- <div> -->
-        <label for="month">Slect Month</label>
-        <select name="month" id="month">
-            <!-- <option value="January">January</option>
-                <option value="Febuary">Febuary</option>
-                <option value="March">March</option>
-                <option value="April">April</option>
-                <option value="May">May</option>
-                <option value="June">June</option>
-                <option value="july">july</option>
-                <option value="Aujust">Aujust</option>
-                <option value="September">September</option>
-                <option value="October">October</option>
-                <option value="Novenmber">Novenmber</option>
-                <option value="December">December</option> -->
-        </select>
-        <!-- <label for="income">Income</label>
-            <input type="number" name="income" id="income" placeholder="Enter Income in Rs">
-            <label for="expense">Ecpense</label>
-            <input type="number" name="expense" id="expense" placeholder="Enter EXPENSE in Rs">
-            <button onclick="p()">Submit</button> -->
-        <!-- </div> -->
+    <div class="form">
+        <div>
+            <label for="month">Month:</label>
+            <select name="month" id="month">
+                <option></option>
+            </select>
+        </div>
+        <div>
+            <label for="income">Income: </label>
+            <input type="number" name="income" id="income" placeholder="Enter Income in ₹" min="10000" required>
+        </div>
+        <div>
+            <label for="expense">Expense: </label>
+            <input type="number" name="expense" id="expense" placeholder="Enter EXPENSE in ₹" required>
+        </div>
+        <div>
+            <button id="submitBtn">Submit</button>
+        </div>
     </div>
-    <div id="lower">
+    <div class="display">
 
     </div>
 </body>
